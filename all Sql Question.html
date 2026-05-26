@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SQL Practice Questions - 50 Intermediate to Advanced</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      line-height: 1.8;
+      color: #333;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    h1 {
+      text-align: center;
+      border-bottom: 3px solid #3498db;
+      padding-bottom: 10px;
+    }
+    h2 {
+      border-bottom: 2px solid #bdc3c7;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
+    ol {
+      line-height: 2.2;
+    }
+    li {
+      margin-bottom: 12px;
+    }
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #7f8c8d;
+      font-style: italic;
+    }
+    @media print {
+      body {
+        font-size: 12pt;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>SQL Practice Questions<br><small>Intermediate to Advanced Level</small></h1>
+
+  <p><strong>Dataset:</strong> <code>indian_employees_data.csv</code><br>
+     <strong>Table:</strong> <code>employees</code><br>
+     <strong>Rows:</strong> 200 | <strong>Columns:</strong> 17<br>
+     <strong>Context:</strong> Indian Employees (Names, Cities, Salaries in INR, Realistic Corporate Roles)</p>
+
+  <h2>🔹 Filtering & Sorting</h2>
+  <ol>
+    <li>Find all active employees in the IT department who earn more than ₹75,000 and have a performance score above 4.0.</li>
+    <li>List employees whose last name starts with 'S' and work in Finance or Marketing.</li>
+    <li>Retrieve employees who logged in between 9 AM and 12 PM on April 5, 2024.</li>
+    <li>Find employees who were hired in 2020 and have not been terminated.</li>
+    <li>Show employees whose email contains their last name.</li>
+    <li>List employees from cities in Maharashtra or Gujarat.</li>
+    <li>Find employees with overtime hours greater than 10 or performance score less than 3.7.</li>
+    <li>Get the top 5 highest-paid employees in Operations who are active.</li>
+  </ol>
+
+  <h2>🔹 Aggregation & GROUP BY</h2>
+  <ol start="9">
+    <li>Calculate the average salary per department.</li>
+    <li>Count the number of active vs inactive employees in each department.</li>
+    <li>Find the department with the highest average performance score.</li>
+    <li>Show the total number of employees, total salary cost, and average overtime per department.</li>
+    <li>Which job title has the highest average salary?</li>
+    <li>Find departments where average salary is above ₹70,000.</li>
+    <li>Count how many employees were hired each year.</li>
+    <li>For each department, find the number of employees eligible for bonus.</li>
+    <li>List departments with more than 10 employees.</li>
+    <li>Find the total overtime hours worked by IT employees in 2023.</li>
+  </ol>
+
+  <h2>🔹 JOINs (Self-Joins & Relationships)</h2>
+  <ol start="19">
+    <li>Display each employee's name along with their manager’s full name.</li>
+    <li>Find employees who do not have a manager (top-level roles).</li>
+    <li>List all employees and their managers, including those without managers (use LEFT JOIN).</li>
+    <li>Find employees whose manager is in a different department.</li>
+    <li>Show employees who report to a manager earning more than ₹90,000.</li>
+    <li>Find pairs of employees working in the same department but different job titles.</li>
+    <li>List all managers and how many employees report to them.</li>
+    <li>Find employees who have the same job title as their manager.</li>
+  </ol>
+
+  <h2>🔹 Subqueries & CTEs</h2>
+  <ol start="27">
+    <li>Find employees earning more than the average salary in their department.</li>
+    <li>List employees whose salary is above the company-wide average.</li>
+    <li>Find the employee with the highest salary in each department.</li>
+    <li>Get employees who were hired after the most recently hired employee in HR.</li>
+    <li>Find employees with performance score above the department average.</li>
+    <li>Use a CTE to rank employees by salary within each department.</li>
+    <li>Using a CTE, find departments where the top earner makes more than ₹85,000.</li>
+    <li>Find employees who have never logged in (last_login is NULL).</li>
+    <li>List employees who earn more than every employee in HR.</li>
+  </ol>
+
+  <h2>🔹 Window Functions</h2>
+  <ol start="36">
+    <li>Rank employees by salary within each department (use RANK).</li>
+    <li>Assign row numbers to employees ordered by hire date (oldest first).</li>
+    <li>Show the cumulative salary sum ordered by hire date.</li>
+    <li>For each department, show the difference between each employee’s salary and the department average.</li>
+    <li>Use LAG() to show the previous employee's salary when ordered by hire_date.</li>
+    <li>Find the salary difference between each employee and the next-hired employee.</li>
+    <li>Partition by department and show the running total of overtime hours.</li>
+    <li>Use NTILE(4) to divide IT employees into quartiles by salary.</li>
+    <li>Find the top 3 earners in each department using window functions.</li>
+  </ol>
+
+  <h2>🔹 Advanced Logic & CASE Expressions</h2>
+  <ol start="45">
+    <li>Categorize employees as 'High', 'Medium', or 'Low' performer based on performance_score (≥4.5, 3.5–4.49, <3.5).</li>
+    <li>Create a report showing: department, total employees, high performers (score ≥4.5), and their percentage.</li>
+    <li>Label employees as 'High Potential' if they are active, bonus eligible, and have performance > 4.3 and salary < 70,000.</li>
+    <li>Find employees who were hired more than 5 years ago but still have overtime > 10 (potential burnout risk).</li>
+    <li>Identify employees who have been with the company for over 3 years but have not received a bonus (bonus_eligible = 0).</li>
+    <li>Write a query to simulate a 10% salary hike for all employees in departments where average performance > 4.2.</li>
+  </ol>
+
+  <footer>
+    Generated for SQL practice & interview preparation.<br>
+    Dataset: Indian employee records with diverse roles, cities, and realistic data.<br>
+    © 2025 | Use freely for learning and training
+  </footer>
+
+</body>
+</html>
