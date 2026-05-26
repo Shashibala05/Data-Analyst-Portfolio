@@ -7,12 +7,16 @@ My Data Analyst projects - SQL, Excel, Power BI
 ## 1. Financial Dashboard
 This dashboard provides a deep dive into financial performance, tracking revenue, costs, and key KPIs.
 
+📥 **Download File:** [Financial_Dashbord.pbix](Financial%20Dashbord.pbix)
+
 ![Financial Dashboard](financial%20dash.png)
 
 ---
 
 ## 2. Sales Dashboard
 This dashboard analyzes sales data across 3 different pages to track overview, performance, and trends.
+
+📥 **Download File:** [Sales_Dashbord.pbix](Sales%20Dashbord.pbix)
 
 ### Page 1: [Yahan Pehle Page Ka Naam Likhein]
 ### Page 2: [Yahan Doosre Page Ka Naam Likhein]
@@ -21,5 +25,7 @@ This dashboard analyzes sales data across 3 different pages to track overview, p
 
 ## 3. Global Store Dashboard
 This Power BI dashboard analyzes the global superstore data to find key insights about sales and profits.
+
+📥 **Download File:** [Global_Store_Deshbord.pbix](golobal store deshbord.pbix)
 
 ![Global Store Dashboard](Global%20superstore.png)
